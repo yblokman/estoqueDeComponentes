@@ -1,0 +1,33 @@
+<meta charset="UTF-8" />
+
+<script>
+    function exibeTitulo(titulo) {
+        document.write('<h1>' + titulo + '</h1>');
+    }
+
+    function pulaLinha() {
+        document.write('<br>');
+    }
+
+    function exibeParagrafo(paragrafo) {
+        document.write('<p>' + paragrafo + '</p>');
+        pulaLinha();
+    }
+
+    function avaliaData() {
+        if (anoCopa > 2023) {
+            exibeParagrafo('A próxima será em: ' + anoCopa);
+        } else {
+            exibeParagrafo('Teve copa em ' + anoCopa);
+        }
+    }
+
+    var dataLimite = parseInt(prompt('Entre com a data limite: '));
+    var anoCopa = 1930;
+
+    while (anoCopa <= dataLimite) {
+        avaliaData();
+        anoCopa = anoCopa + 4;
+    }
+    exibeParagrafo('FIM');
+</script>

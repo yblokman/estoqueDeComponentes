@@ -1,0 +1,35 @@
+<meta charset="utf-8" />
+
+<script>
+    function exibeTitulo(titulo) {
+        document.write('<h1>' + titulo + '</h1>');
+    }
+
+    function exibeParagrafo(paragrafo) {
+        document.write('<p>' + paragrafo + '</p>');
+        //pulaLinha()
+    }
+
+    function pulaLinha() {
+        document.write('<br>');
+    }
+
+    function diferença() {
+        if (diferencaIdades < 0) {
+            diferencaIdades = diferencaIdades * -1;
+        }
+    }
+
+    var idadeEsther = 11;
+    var idadeGabriel = 15;
+    var diferencaIdades = idadeEsther - idadeGabriel;
+
+    diferença();
+    exibeTitulo('Comparador');
+    exibeParagrafo('Esse é um programa comparador de idades!');
+    exibeParagrafo('A idade de Esther é de ' + idadeEsther + ' anos');
+    exibeParagrafo('Já a idade de Gabriel é de ' + idadeGabriel + ' anos');
+    exibeParagrafo(
+        'A diferença de idade dos dois é de ' + diferencaIdades + ' anos!'
+    );
+</script>

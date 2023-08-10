@@ -1,0 +1,40 @@
+<meta charset="UTF-8" />
+
+<script>
+    function exibeTitulo(titulo) {
+        document.write('<h1>' + titulo + '</h1>');
+    }
+
+    function pulaLinha() {
+        document.write('<br>');
+    }
+
+    function exibeParagrafo(paragrafo) {
+        document.write('<p>' + paragrafo + '</p>');
+        pulaLinha();
+    }
+
+    var numeroPensado = Math.round(Math.random() * 10);
+    console.log(numeroPensado);
+    var numeroChutado = parseInt(prompt('Chute um número de 1 a 10: '));
+
+    var contador = 1;
+
+    var opera = true
+   if(contador == 3){
+            opera == false
+        }
+    while (opera = true) {
+        if (numeroChutado == numeroPensado) {
+            exibeParagrafo('Seu chute estava correto!');
+        } else {
+            exibeParagrafo(
+                'Seu chute estava errado, o número pensado foi: ' +
+                    numeroPensado
+            );
+            contador++;
+        }
+
+     
+    }
+</script>

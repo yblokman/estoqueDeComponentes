@@ -1,0 +1,61 @@
+<meta charset="UTF-8" />
+
+<script>
+    function exibeTitulo(titulo) {
+        document.write('<h1>' + titulo + '</h1>');
+    }
+
+    function pulaLinha() {
+        document.write('<br>');
+    }
+
+    function exibeParagrafo(paragrafo) {
+        document.write('<p>' + paragrafo + '</p>');
+        pulaLinha();
+    }
+
+    function calculaImc(peso, altura) {
+        return peso / (altura * altura);
+    }
+
+    function avaliaMagreza() {
+        if (imcCalculado < 18) {
+            document.write(
+                'ALERTA! ' +
+                    nome +
+                    ' seu IMC está na faixa da magreza, procure um médico'
+            );
+        }
+    }
+
+    function avaliaSobrepeso() {
+        if (imcCalculado > 25 && imcCalculado < 29) {
+            document.write(
+                nome +
+                    'você está apresentando sobrepeso procure se manter com uma dieta balanceada'
+            );
+        }
+    }
+
+    function avaliaObesidade() {
+        if (imcCalculado > 29) {
+            document.write(
+                'ALERTA! ' +
+                    nome +
+                    ' seu IMC está acima da faixa da obesidade, procure um médico'
+            );
+        }
+    }
+
+    var nome = prompt('Digite o seu nome: ');
+    var alturaInformada = prompt('informe sua altura: ');
+    var pesoInformado = prompt('informe seu peso: ');
+    var imcCalculado = calculaImc(pesoInformado, alturaInformada);
+
+    exibeParagrafo(
+        'Olá ' + nome + ', seu IMC é de: ' + Math.round(imcCalculado)
+    );
+    avaliaMagreza();
+    avaliaObesidade();
+    avaliaSobrepeso();
+</script>

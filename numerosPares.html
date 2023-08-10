@@ -1,0 +1,23 @@
+<meta charset="UTF-8" />
+<script>
+    var falhou = 3;
+
+    var loginCadastrado = 'alura';
+    var senhaCadastrada = 'alura321';
+
+    var loginInformado = prompt('Informe seu login');
+    var senhaInformada = prompt('Informe sua senha');
+    while (falhou > 0) {
+        if (
+            loginCadastrado == loginInformado &&
+            senhaCadastrada == senhaInformada
+        ) {
+            alert('Bem-vindo ao sistema ' + loginInformado);
+        } else {
+            falhou = falhou - 1;
+            alert('Login inválido. Tente novamente' + falhou);
+        }
+    }
+
+    document.write("Você tentou acessar nosso site muitas vezes, espere para novas tentativas.")
+</script>

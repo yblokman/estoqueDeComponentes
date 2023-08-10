@@ -1,0 +1,22 @@
+<meta charset="utf-8" />
+
+<script>
+    function exibeTitulo(titulo) {
+        document.write('<h1>' + titulo + '</h1>');
+    }
+
+    function mostraParagrafo(paragrafo) {
+        document.write('<p>' + paragrafo + '</p>');
+    }
+
+    var anosPorGeracao = 28;
+    var anoInicial = 1500;
+    var anoAtual = 2023;
+    var quantidadeDeGeracoes = (anoAtual - anoInicial) / anosPorGeracao;
+
+    exibeTitulo('Média de gerações desde 1500');
+    mostraParagrafo('Em média no Brasil um casal tem filhos com 28 anos');
+    mostraParagrafo(
+        'Tendo isso em vista é de imaginar que já se passaram ' + Math.round(quantidadeDeGeracoes) + " gerações"
+    );
+</script>
