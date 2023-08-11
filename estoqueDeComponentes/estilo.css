@@ -1,18 +1,43 @@
-body {
-    background-color: #0068B3;
-    margin: 0px;
+body{ 
+    margin: 0%;
+    padding: 0%;
 }
-.container {
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+
+.background{
+    z-index: -1;
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #0068B3;
+    background: radial-gradient(ellipse at left top, #0068B3 73.26%, #007BC1 73.26%, #007BC1 81.47%, #268FCA 81.49%, #268FCA 91.66%, #4DA3D4 91.67%, #4DA3D4 100%);
 }
 
-.vector1 {
-    /* Ajuste o tamanho do SVG conforme necessário */
-    width: 600px;
-    height: 100%;
+.content {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.box {
+    padding: 10px;
+    background: #0B5396;    /* Cor de fundo da caixa */
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.1);    /* Sombra para a caixa */
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.fontTitle{
+    color: #FFF;
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
 }
