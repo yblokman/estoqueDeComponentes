@@ -15,7 +15,7 @@ body{
     background: radial-gradient(ellipse at left top, #0068B3 73.26%, #007BC1 73.26%, #007BC1 81.47%, #268FCA 81.49%, #268FCA 91.66%, #4DA3D4 91.67%, #4DA3D4 100%);
 }
 
-.content {
+.contentTitle {
     position: relative;
     width: 100%;
     height: 90px;
@@ -25,7 +25,7 @@ body{
     gap: 10px;
 }
 
-.box {
+.boxTitle {
     padding: 10px;
     background: #0B5396;    /* Cor de fundo da caixa */
     box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.1);    /* Sombra para a caixa */
@@ -33,11 +33,82 @@ body{
     border-radius: 10px;
 }
 
-.fontTitle{
+
+.fontTitleAnton{
     color: #FFF;
     font-family: 'Anton', sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: 1;
+}
+.fontItemKoulen {
+    color: #FFF;
+    font-family: 'Koulen', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.containerBox {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    column-gap: 30px;
+    justify-content: center;
+}
+
+.boxItem{
+    display: grid;
+    width: 182px;
+    height: 237px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: rgba(192, 192, 192, 0.19);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.37);
+}
+
+.styleButton{
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.37);
+}
+
+.svgButton{
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    justify-items: center;
+}
+
+.contentBox{
+    right: 250px;
+    left: 250px;
+    top: 50px;
+    bottom: 50px;
+    position: absolute;
+    display: grid;
+    width: 659px;
+    height: 385px;
+    padding: 90px;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    flex-shrink: 0;
+}
+
+.bgBox{
+    border-radius: 17px;
+    background: #0B5396;
 }
